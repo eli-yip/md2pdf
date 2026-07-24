@@ -56,6 +56,7 @@ async function render(file: string, opts: Opts): Promise<void> {
       {
         stylesheet: [CSS],
         body_class: ["markdown-body"],
+        marked_options: { breaks: true }, // 软换行渲染为 <br>，而非 CommonMark 默认的空格
         ...(opts.math ? { script: MATHJAX } : {}),
         pdf_options: {
           format: "A4",
