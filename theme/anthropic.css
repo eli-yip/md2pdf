@@ -91,7 +91,10 @@ blockquote p {
 
 /* Code */
 code {
-  font-family: "SF Mono", "JetBrains Mono", ui-monospace, monospace;
+  /* Menlo + Heiti SC for the same reason as body: both embed as CID TrueType.
+     SF Mono / ui-monospace embed as Type 3, and CJK here fell back to PingFang
+     (also Type 3) — both give oversized selection rects. */
+  font-family: Menlo, "Heiti SC", monospace;
   font-size: 0.86em;
   background: var(--code-bg);
   padding: 0.12em 0.4em;
