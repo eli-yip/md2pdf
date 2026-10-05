@@ -14,8 +14,6 @@ md2pdf 某文件.md
 md2pdf --format html 某文件.md    # → 某文件.html
 ```
 
-HTML 内嵌样式；图片保留原引用，移动文件时需保持相对路径；`--math` 需要联网加载 MathJax。
-
 ### 指定输出名
 
 ```bash
