@@ -62,6 +62,7 @@ async function render(file: string, opts: Opts): Promise<void> {
           format: "A4",
           margin: { top: "12mm", bottom: "12mm", left: "10mm", right: "10mm" },
           printBackground: true,
+          outline: true,
         },
       },
     );
